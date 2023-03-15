@@ -37,9 +37,9 @@
     right: 0px;
 }
 
-.color-switcher h3 {
+.color-switcher {
     color: var(--main-color);
-    background-color: #d2d2d2;
+    background-color: rgba(0, 0, 0, 0);
     font-size: 20px;
     margin-bottom: 10px;
     border-radius: 1px solid #3333;
@@ -52,7 +52,7 @@
     left: -75px;
     top: 0;
     color: var(--main-color);
-    background: #fff;
+    background-color: rgba(0, 0, 0, 0);
     padding: 10px 20px;
     cursor: pointer;
     font-size: 37px;
@@ -104,17 +104,17 @@ body.active {
     width: 64px;
     height: 32px;
     border-radius: 32px;
-    background: #fff;
+    background: #000000;
     transition: 0.5s;
     cursor: pointer;
-    box-shadow: inset 0 8px 60px rgba(255, 255, 255, 0.1),
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
         inset 0 8px 8px rgba(0, 0, 0, 0.1),
         inset 0 -4px 4px rgba(0, 0, 0, 0.1);
 }
 
 #toggle.active {
-    background: #000;
-    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+    background: #ffffff;
+    box-shadow: inset 0 2px 60px rgba(255, 255, 255, 0.1),
         inset 0 2px 8px rgba(0, 0, 0, 0.1),
         inset 0 -4px 8px rgba(0, 0, 0, 0.05);
 }
@@ -125,7 +125,7 @@ body.active {
     left: 0;
     width: 32px;
     height: 32px;
-    background: linear-gradient(to bottom, #000, #222);
+    background: var(--main-color);
     border-radius: 50%;
     transition: scale(0.9);
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
@@ -136,7 +136,7 @@ body.active {
 
 #toggle.active .indicator {
     left: 32px;
-    background: linear-gradient(to bottom, #fff, #222);
+    background: var(--main-color);
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
         inset 0 4px 4px rgba(255, 255, 255, 0.2),
         inset 0 -4px 4px rgba(255, 255, 255, 0.2);
@@ -146,10 +146,12 @@ body.active {
     display: flex;
 }
 .mode .fa-moon{
+    color: var(--main-color);
     font-size: 25px;
     margin: auto;
 }
 .mode .fa-sun {
+    color: var(--main-color);
     font-size: 25px;
     margin: auto;
 }
