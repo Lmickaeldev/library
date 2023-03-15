@@ -20,23 +20,7 @@
     padding-bottom: 80px;
 }
 
-.container h1 {
-    color: var(--main-color);
-    background: var(--dark-color);
-    box-shadow: 4px 10px 15px rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    font-size: 30px;
-    padding: 5px 10px;
-}
 
-.container h1.active {
-    color: var(--main-color);
-    background:var(--white-color);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-    font-size: 30px;
-    padding: .5em .8em;
-}
 
 .color-switcher {
     position: fixed;
@@ -169,4 +153,21 @@ body.active {
     font-size: 25px;
     margin: auto;
 }
+/*isolé*/
+h1 {
+    color: var(--main-color);
+    background: var(--dark-color);
+    box-shadow: 4px 10px 15px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 5px 10px;
+}
 
+h1.active {
+    color: var(--main-color);
+    background: var(--white-color);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 5px 10px;
+}
