@@ -1,0 +1,172 @@
+:root {
+    --main-color: #8e44ad;
+    --dark-color:#000;
+    --white-color:#fff;
+}
+/* color-system*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    transition: all 0.5s linear;
+}
+
+.container {
+    min-height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.container h1 {
+    color: var(--main-color);
+    background: var(--dark-color);
+    box-shadow: 4px 10px 15px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+
+.container h1.active {
+    color: var(--main-color);
+    background:var(--white-color);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-size: 30px;
+    padding: .5em .8em;
+}
+
+.color-switcher {
+    position: fixed;
+    top: 25px;
+    right: -200px;
+    width: 200px;
+    padding: 10px;
+    background: #fff;
+    z-index: 1000;
+    /* border: #8e44ad solid 1px; */
+}
+
+.color-switcher.active {
+    right: 0px;
+}
+
+.color-switcher h3 {
+    color: var(--main-color);
+    background-color: #d2d2d2;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 1px solid #3333;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.color-switcher .switcher-btn {
+    position: absolute;
+    left: -75px;
+    top: 0;
+    color: var(--main-color);
+    background: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 37px;
+}
+
+.color-switcher .switcher-btn i {
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.color-switcher .theme-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.color-switcher .theme-buttons-container .theme-buttons {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+/*dark-nigth*/
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        transition: all 0.5s linear;
+}
+body{
+    background: var(--white-color);
+}
+body.active {
+    background-color: var(--dark-color);
+}
+
+#toggle {
+    margin: 10px auto;
+    position: relative;
+    display: block;
+    width: 64px;
+    height: 32px;
+    border-radius: 32px;
+    background: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: inset 0 8px 60px rgba(255, 255, 255, 0.1),
+        inset 0 8px 8px rgba(0, 0, 0, 0.1),
+        inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#toggle.active {
+    background: #000;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+        inset 0 2px 8px rgba(0, 0, 0, 0.1),
+        inset 0 -4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#toggle .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(to bottom, #000, #222);
+    border-radius: 50%;
+    transition: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+        inset 0 4px 4px rgba(255, 255, 255, 0.2),
+        inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+}
+
+#toggle.active .indicator {
+    left: 32px;
+    background: linear-gradient(to bottom, #fff, #222);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+        inset 0 4px 4px rgba(255, 255, 255, 0.2),
+        inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+}
+
+.mode{
+    display: flex;
+}
+.mode .fa-moon{
+    font-size: 25px;
+    margin: auto;
+}
+.mode .fa-sun {
+    font-size: 25px;
+    margin: auto;
+}
+
