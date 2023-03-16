@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d2d2d2;
+    height: 100vh;
+    overflow: hidden;
+}
+#app {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.roulette {
+    
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    border-radius: 50%;
+    border: 15px solid #000;
+    position: relative;
+    overflow: hidden;
+    transition: 5s;
+}
+
+.roulette div {
+    height: 50%;
+    width: 60px;
+    position: absolute;
+    clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+    transform-origin: bottom;
+    text-align: center;
+    margin: auto;
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: aliceblue;
+    left: 44%;
+}
+.one{
+    background: #cce621;
+    font-weight: bold;
+    
+    
+    
+} 
+.three{
+    background: #3ee621;
+    font-weight: bold;
+    
+    
+}
+.ten{
+    background: #e621d6;
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+.five{
+    background: #4221e6;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.twenty{
+    background: #e62121;
+    font-size: 20px;
+    font-weight: bold;
+}
+#a{
+    transform: rotate(14.4deg);
+}
+#b{
+    
+    transform: rotate(28.8deg);
+}
+#c {
+    transform: rotate(43.2deg);
+}
+#d{
+    transform: rotate(57.6deg);
+}
+#e{
+        transform: rotate(72deg);
+    }
+#f{
+        transform: rotate(86.4deg);
+    }
+#g{
+        transform: rotate(100.8deg);
+    }
+#h{
+        transform: rotate(115.2deg);
+    }
+#i{
+        transform: rotate(129.6deg);
+    }
+#j{
+        transform: rotate(144deg);
+    }
+#k{
+        transform: rotate(158.4deg);
+    }
+#l{
+        transform: rotate(172.8deg);
+    }
+#m{
+        transform: rotate(187.2deg);
+    }
+#n{
+        transform: rotate(201.6deg);
+    }
+#o{
+        transform: rotate(216deg);
+    }
+#p{
+        transform: rotate(230.4deg);
+    }
+#q{
+        transform: rotate(244.8deg);
+    }
+#r{
+        transform: rotate(259.2deg);
+    }
+#s{
+        transform: rotate(273.6deg);
+    }
+#t{
+        transform: rotate(288deg);
+    }
+#u{
+        transform: rotate(302.4deg);
+    }
+#v{
+        transform: rotate(316.8deg);
+    }
+#w{
+        transform: rotate(331.2deg);
+    }
+#x{
+        transform: rotate(345.6deg);
+    }
+#y{
+        transform: rotate(360deg);
+    }
+.arrow {
+    content: '';
+    position: absolute;
+    height: 50px;
+    width: 20px;
+    background-color: #e62121;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+    z-index: 1;
+    top: 0px;
+    left:50%;
+}

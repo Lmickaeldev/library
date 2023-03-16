@@ -1,0 +1,100 @@
+@font-face 
+{
+    font-family: 'rust';
+    src: url('police/Rust.ttf');
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    font-size:100%;
+    font:inherit;
+    font-family: rust;
+    vertical-align:baseline
+}
+.gbrust
+{
+    color: brown;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 3px 3px 3px #000;
+    padding-bottom: 30px;
+
+}
+#app 
+{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.marker
+{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 222px ;
+    rotate: 180deg;
+    top: -28px;
+    z-index:2;
+    
+}
+.wheel
+{
+    width: 100%;
+    height: 100%;
+
+}
+.button
+{
+    display: block;
+    width: 250px;
+    margin: 40px auto;
+    cursor: pointer;
+}
+.button:hover
+{
+    opacity: 0.8;
+}
+.blur
+{
+    animation: blur 10s;
+}
+@keyframes blur
+{
+    0%{
+        filter: blur(1.5px);
+    }
+    80%{
+        filter: blur(1.5px);
+    }
+    100%{
+        filter:blur(0px);
+    }
+}
+.display
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: rust;
+    font-size: 2rem;
+    color: rgb(255, 0, 0);
+    margin: 20px auto;
+
+}
+body
+{
+    
+    background-color: #000;
+    
+
+}
