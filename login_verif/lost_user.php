@@ -16,17 +16,19 @@
     <div class="container">
         <div class="form signin">
 
-            <h2>nom d'utilisateur perdu</h2>
-            <div class="inputBox">
-                <input type="text" required="required">
-                <i class="fa-regular fa-envelope"></i>
-                <span>adresse email</span>
-            </div>
-            <div class="inputBox">
-                <input type="submit" value="envoyer">
-            </div>
-            <p>pas encore menbre ?/ <a href="new_user.html" class="login">Créer un comptre</a></p>
-            
+            <form action="">
+                <h2>nom d'utilisateur perdu</h2>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>adresse email</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="envoyer">
+                </div>
+                <p>pas encore menbre ?/ <a href="new_user.php" class="login">Créer un comptre</a></p>
+                
+            </form>
         </div>
 </body>
 
