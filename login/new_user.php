@@ -76,7 +76,7 @@
             <form action="inscription_traitement.php" method="post"  >
                 <h2>s'inscrire</h2>
                 <div class="inputBox">
-                    <input type="text" name="pseudo" value="">
+                    <input type="text" name="pseudo" value="" >
                     <i class="fa-regular fa-user"></i>
                     <span>nom d'utilisateur</span>
                     
